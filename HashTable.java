@@ -1,10 +1,10 @@
-import java.io.*;
+
 import java.util.*;
 
 public class HashTable {
 
     private LinkedList<String>[] tabla;
-    private final int TAMANO = 10; // puedes cambiar el tamaño que quieras
+    private final int TAMANO = 10;
 
     public HashTable() {
         tabla = new LinkedList[TAMANO];
@@ -13,7 +13,8 @@ public class HashTable {
         }
     }
 
-    // Hash simple basado en suma de caracteres
+    
+    // Hash basado en suma de caracteres
     private int hash(String nombre) {
         int suma = 0;
         for (char c : nombre.toCharArray()) {
